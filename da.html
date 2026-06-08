@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persuasiune & Manipulare</title>
+    <style>
+        :root {
+            --bg: #0f0f0f;
+            --surface: #1a1a1a;
+            --accent: #e63946;
+            --text: #f1faee;
+            --muted: #a8dadc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--surface) 0%, #2a2a2a 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 3px solid var(--accent);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: var(--muted);
+        }
+
+        nav {
+            background: var(--surface);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            color: var(--accent);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--accent);
+            padding-left: 1rem;
+        }
+
+        h3 {
+            color: var(--muted);
+            margin: 1.5rem 0 0.75rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .card {
+            background: var(--surface);
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 1px solid #333;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(230, 57, 70, 0.2);
+        }
+
+        .card h4 {
+            color: var(--accent);
+            margin-bottom: 0.75rem;
+        }
+
+        .card p {
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, #2d1f1f 0%, #1a1a1a 100%);
+            border: 2px solid var(--accent);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .warning-box h3 {
+            color: var(--accent);
+            margin-top: 0;
+        }
+
+        ul.tech-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul.tech-list li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #333;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        ul.tech-list li::before {
+            content: "→";
+            color: var(--accent);
+            position: absolute;
+            left: 0;
+        }
+
+        footer {
+            background: var(--surface);
+            text-align: center;
+            padding: 2rem;
+            color: var(--muted);
+            border-top: 1px solid #333;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            nav ul {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🎭 Persuasiune & Manipulare</h1>
+    <p>Înțelege mecanismele care influențează deciziile umane</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#introducere">Introducere</a></li>
+        <li><a href="#diferente">Diferențe</a></li>
+        <li><a href="#tehnici">Tehnici</a></li>
+        <li><a href="#aparare">Apărare</a></li>
+        <li><a href="#resurse">Resurse</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <section id="introducere">
+        <h2>Ce sunt persuasiunea și manipularea?</h2>
+        <p><strong>Persuasiunea</strong> este arta de a convinge pe cineva să adopte un punct de vedere sau să ia o decizie, folosind argumente logice, emoții sau credibilitate. Este transparentă și respectă autonomia celuilalt.</p>
+        <p><strong>Manipularea</strong> implică influențarea ascunsă a deciziilor cuiva, adesea în detrimentul acestuia. Exploatează vulnerabilități psihologice fără ca ținta să fie conștientă de asta.</p>
+    </section>
+
+    <section id="diferente">
+        <h2>Persuasiune vs. Manipulare</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h4>✅ Persuasiune etică</h4>
+                <p>Argumente transparente, respect pentru alegerea liberă, beneficiu reciproc, informații corecte.</p>
+            </div>
+            <div class="card">
+                <h4>❌ Manipulare</h4>
+                <p>Tactici ascunse, exploatarea emoțiilor, distorsionarea adevărului, beneficiu unilateral.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tehnici">
+        <h2>Tehnici psihologice de influențare</h2>
+        <p>Robert Cialdini a identificat șase principii fundamentale ale persuasiunii:</p>
+
+        <ul class="tech-list">
+            <li><strong>Reciprocitate</strong> — Simțim nevoia să răsplătim favorurile primite.</li>
+            <li><strong>Angajament și consistență</strong> — Odată ce ne angajăm public, vrem să fim consecvenți.</li>
+            <li><strong>Dovada socială</strong> — Ne ghidăm după comportamentul celorlalți în situații incerte.</li>
+            <li><strong>Autoritate</strong> — Acordăm mai multă credibilitate experților și figurilor de autoritate.</li>
+            <li><strong>Simpatie</strong> — Suntem mai ușor convinși de oameni care ne plac.</li>
+            <li><strong>Raritate</strong> — Percepem ca mai valoroase lucrurile limitate sau pe cale de dispariție.</li>
+        </ul>
+
+        <h3>Tehnici manipulative comune</h3>
+        <div class="card-grid">
+            <div class="card">
+                <h4>Gaslighting</h4>
+                <p>Persoana manipulată este făcută să se îndoiască de propria percepție și memorie.</p>
+            </div>
+            <div class="card">
+                <h4>Love bombing</h4>
+                <p>Afecțiune și atenție excesivă la început pentru a crea dependență emoțională.</p>
+            </div>
+            <div class="card">
+                <h4>Frica și urgența falsă</h4>
+                <p>Crearea unui sentiment de panică pentru a forța decizii grăbite.</p>
+            </div>
+            <div class="card">
+                <h4>Izolarea</h4>
+                <p>Separarea victimei de sistemul de suport (familie, prieteni).</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="aparare">
+        <h2>Cum te aperi de manipulare</h2>
+
+        <div class="warning-box">
+            <h3>⚠️ Semnale de alarmă</h3>
+            <p>Fii atent când cineva: te presează să decizi imediat, te face să te simți vinovat fără motiv, contrazice fapte evidente, te izolează de cei dragi, sau oscilează între laudă extremă și critică dură.</p>
+        </div>
+
+        <ul class="tech-list">
+            <li><strong>Pauză înainte de decizie</strong> — Nu răspunde impulsiv la cereri urgente.</li>
+            <li><strong>Verifică informațiile</strong> — Caută surse independente.</li>
+            <li><strong>Ascultă-ți intuiția</strong> — Dacă ceva pare „off", probabil este.</li>
+            <li><strong>Stabilește limite clare</strong> — Spune „nu" fără să te justifici excesiv.</li>
+            <li><strong>Menține relații diverse</strong> — Un cerc social sănătos te protejează de izolare.</li>
+            <li><strong>Educă-te continuu</strong> — Cunoașterea tehnicilor le reduce eficiența.</li>
+        </ul>
+    </section>
+
+    <section id="resurse">
+        <h2>Resurse recomandate</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h4>📚 „Influence" — Robert Cialdini</h4>
+                <p>Cartea de referință despre psihologia persuasiunii.</p>
+            </div>
+            <div class="card">
+                <h4>📚 „Thinking, Fast and Slow" — Daniel Kahneman</h4>
+                <p>Cum funcționează mintea și de ce facem erori de judecată.</p>
+            </div>
+            <div class="card">
+                <h4>📚 „The Art of Seduction" — Robert Greene</h4>
+                <p>Analiza istorică a tehnicilor de influență și seducție.</p>
+            </div>
+            <div class="card">
+                <h4>📚 „Never Split the Difference" — Chris Voss</h4>
+                <p>Tehnici de negociere de la un fost negociator FBI.</p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>Acest site are scop educativ. Cunoașterea acestor tehnici te ajută să te protejezi și să comunici mai eficient.</p>
+    <p style="margin-top: 1rem; font-size: 0.9rem;">© 2026 Persuasiune & Manipulare</p>
+</footer>
+
+</body>
+</html>
